@@ -12,6 +12,7 @@
     margin: 10px 20px;
     background: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .toggle-btn i {
@@ -22,12 +23,13 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 25%;
+    width: 250px;
     height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
     row-gap: 1rem;
     background-color: whitesmoke;
+    /* transform: translate(-100%); */
 }
 
 .header img {
@@ -47,11 +49,13 @@
 .close-btn {
     border: none;
     background: transparent;
+    cursor: pointer;
+    margin-right: 10px;
 }
 
 .close-btn:hover{
     transform: rotate(360deg);
-    transition: 0.3s ease-in-out;
+    transition: 0.3s ease-out;
 }
 
 .links {
@@ -74,4 +78,16 @@
 .social-icons i {
     padding: 5px;
     color: #1DA1F2;
+}
+
+@media screen and (max-width: 425px){
+    .sideBar{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 426px){
+    .sideBar{
+        width: 250px;
+    }
 }
