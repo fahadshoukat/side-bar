@@ -29,7 +29,11 @@
     grid-template-rows: auto 1fr auto;
     row-gap: 1rem;
     background-color: whitesmoke;
-    /* transform: translate(-100%); */
+    transform: translate(-100%);
+}
+
+.show-sideBar {
+    transform: translate(0);
 }
 
 .header img {
